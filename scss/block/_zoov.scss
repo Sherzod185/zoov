@@ -1,0 +1,167 @@
+.zoov{
+&{
+  margin-bottom: 180px;
+}
+  &__title{
+    max-width:326px ;
+    font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: #000000;}
+  &__ellips {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  &__ellips::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../../img/ellip.svg");
+    width: 160px;
+    height: 92px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    left: -25px;
+    top: -16px;
+    rotate: (-3deg);
+  }
+
+  &__text1{
+max-width: 777px;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #000000;
+margin-left: 30px;
+  }
+  &__text-block{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 74px;
+  }
+  &__item{
+    max-width: 180px;
+
+  }
+  &__sub-title{
+    font-weight: 700;
+font-size: 16px;
+line-height: 130%;
+color: #000000;
+margin-bottom: 4px;
+  }
+  &__sub-text{
+    font-weight: 400;
+font-size: 13px;
+line-height: 130%;
+color: #9F9E9D;
+margin-bottom: 16px;
+  }
+  &__text2{
+    max-width: 280px;
+    font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: #434242;
+margin-bottom: 11px;
+  }
+  &__sub-text2{
+    font-weight: 400;
+font-size: 13px;
+line-height: 130%;
+color: #9F9E9D;
+margin-bottom: 24px;
+  }
+  &__btn{
+    font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+text-align: center;
+color: #961914;
+padding: 13px 42px;
+border: 1px solid #961914;
+border-radius: 8px;
+  }
+  &__img{
+    max-width: 280px;
+    margin-bottom: 45px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &__text3{
+    font-weight: 500;
+font-size: 28px;
+line-height: 140%;
+max-width: 705px;
+letter-spacing: 0.02em;
+color: #000000;
+  }
+  &__link{
+    font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+background: #961914;
+border-radius: 8px;
+padding: 13px 42px;
+  }
+  &__rek{
+    background-color: #EAD1D0;
+    padding: 52px 121px 54px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+@media only screen and (max-width:870px){
+.zoov{
+&__item{
+  display: none;
+}
+&__itemm{
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+&__text1{
+  display: none;
+}
+&__list{
+  align-items: center;
+}
+&__rek{
+  flex-direction: column;
+  padding: 32px 25px ;
+  text-align: center;
+}
+&__text3{
+  margin-bottom: 24px;
+}
+&__title{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+}
+}
+@media only screen and (max-width:480px){
+  .zoov{
+    &__itm{
+      display: none;
+    }
+    &{
+      margin-bottom: 80px;
+    }
+  }
+}
